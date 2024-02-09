@@ -34,4 +34,22 @@ void main() {
   add(9, 10);
   calculateIntrest(principle: 100, time: 10, rate: 4);
   getInformation(name: 'harsha', gender: 'male', age: 23, operation: add);
+  Solution s1 = Solution(s: '421');
+  s1.stringToIntConvert();
+}
+
+class Solution {
+  String s;
+  Solution({required this.s});
+  void stringToIntConvert() {
+    print(s.runtimeType);
+    int a = int.parse(s);
+    print(a);
+  }
+  // int a = int.parse(s);
+  // void
+  //  print(s.runtimeType);
+  // int a(String s) {
+  //   print(s.runtimeType);
+  // }
 }
